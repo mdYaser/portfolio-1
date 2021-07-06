@@ -1,6 +1,7 @@
 const navbar = document.querySelector('nav');
 const scrollUpBtn = document.querySelector('.scroll-up-btn');
 const menuItems = document.querySelector('.menu-items');
+const menuItemsChild = document.querySelectorAll('.menu-items li a');
 const menuBtn = document.querySelector('.menu-btn i');
 const send = document.querySelector('.send');
 const status = document.querySelector('.status');
@@ -41,7 +42,6 @@ function handleMenu(e) {
     menuBtn.classList.add('active');
   }
   isMenuBtnActive = !isMenuBtnActive;
-  console.log('CLICKED', isMenuBtnActive);
 }
 
 function scrollToTop() {
@@ -67,3 +67,10 @@ function contactMe(e) {
 }
 
 window.addEventListener('scroll', debounce(scrolling));
+menuItemsChild.forEach(ele =>
+  ele.addEventListener('click', () => {
+    menuItems.classList.remove('active');
+    menuBtn.classList.remove('active');
+    isMenuBtnActive = !isMenuBtnActive;
+  })
+);
