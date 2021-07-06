@@ -148,8 +148,8 @@ nav header .menu-items li a:hover {
 
 /* Home */
 .home {
-  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(/images/bg2.jpg) no-repeat center center fixed;
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(/images/bg2.jpg) no-repeat center center fixed;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.9)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.5))), url(../images/bg2.jpg) no-repeat center center fixed;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url(../images/bg2.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100vh;
   min-height: 31.25rem;
