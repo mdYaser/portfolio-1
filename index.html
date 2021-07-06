@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/31276b4061.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+</head>
+<body>
+    <div class="scroll-up-btn" onclick="scrollToTop()">
+        <i class="fa fa-angle-up"></i>
+    </div>
+    <nav>
+        <header class="maxw">
+            <div class="logo"><a href="#">Mohamed<span> Yaser</span></a></div>
+            <ul class="menu-items">
+                <li><a href="#about">About me</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-btn" onclick="handleMenu()"><i class="fas fa-bars"></i></div>
+        </header>
+    </nav>
+    <section class="home" id="home">
+        <div class="maxw">
+            <div class="text-content">
+                <div class="text-1">Hello!</div>
+                <div class="text-2">I'm Mohamed Yaser</div>
+                <div class="text-3"><span class="typing"></span></div>
+            </div>    
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="maxw">
+            <div class="title">
+                About me
+                <i>— who I am —</i>
+            </div>
+            <div class="about-content">
+                <div class="avatar">
+                    <img src="./images/avatar.jpg" alt="MY">
+                </div>
+                <div class="about-text">
+                    <p class="text-1">I'm a <span>passionate</span> web developer who can provide <span>user-friendly</span> web experience. I also have expericence on <span>Full Stack Development</span>.</p>
+                    <p class="text-2">When I'm not on the computer, I will be enjoying memes, reading books, crafting arts or consuming content from YouTube.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="experience" id="experience">
+        <div class="maxw">
+            <div class="title">
+                Experience
+                <i>— where I worked —</i>
+            </div>
+            <div class="timeline">
+                <div class="box left">
+                    <div class="box-content">
+                        <div class="box-title">MyGate <div>[Outsourced from Codingmart]</div></div>
+                        <ul>
+                            <li>
+                                Frontend Development
+                            </li>
+                            <li>
+                                2020 - Present
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box right">
+                    <div class="box-content">
+                        <div class="box-title">Clevero</div>
+                        <ul>
+                            <li>
+                                Full Stack Development
+                            </li>
+                            <li>
+                                2018 - 2019
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box left">
+                    <div class="box-content">
+                        <div class="box-title">Urjanet</div>
+                        <ul>
+                            <li>
+                                Java template Development
+                            </li>
+                            <li>
+                                2017 - 2018
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="skills" id="skills">
+        <div class="maxw">
+            <div class="title">
+                Skills
+                <i>— what I know —</i>
+            </div>
+            <div class="skills-content">
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-html-5.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-css3.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-sass.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-javascript.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-react-native.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-redux.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-nodejs.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-npm.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-material-ui.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/icons8-webpack.svg" /></div>
+                <div class="skill-item"><img class="skill-icon" src="images/pwa.svg" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="education" id="education">
+        <div class="maxw">
+            <div class="title">
+                Education
+                <i>— what I studied —</i>
+            </div>
+            <div class="edu-content">
+                <div class="edu-card">
+                    <div class="edu-year">2018</div>
+                    <i class="fas fa-graduation-cap icon"></i>
+                    <div class="edu-last">
+                        <div>BE - ECE</div>
+                        <div>86%</div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2014</div>
+                    <i class="fas fa-university icon"></i>
+                    <div class="edu-last">
+                        <div>12th</div>
+                        <div>87%</div>
+                    </div>
+                </div>
+                <div class="edu-card">
+                    <div class="edu-year">2012</div>
+                    <i class="fas fa-book-open icon"></i>
+                    <div class="edu-last">
+                        <div>10th</div>
+                        <div>93%</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="contact" id="contact">
+        <div class="maxw">
+            <div class="title">
+                Contact me
+                <i>— get in touch —</i>
+            </div>
+            <div class="con-content">
+                <div class="con-left">
+                    <div class="header">Get in touch</div>
+                    <ul>
+                        <li>
+                            <a href="https://www.linkedin.com/in/mohamedyaser/" target="_blank" rel="noopener noreferrer">
+                                <img src='./images/icons8-linkedin.svg' alt='Linked In' class="in-icon"/>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="mailto:im.mohamedyaser@gmail.com" target="_blank" rel="noopener noreferrer">
+                                <img src='./images/icons8-gmail.svg' alt='Gmail' class="in-icon"/>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="con-right">
+                    <div class="header">Message me</div>
+                    <form onsubmit="contactMe(event)">
+                        <div class="group">
+                            <div class="field name">
+                                <input type="text" name="name" placeholder="Name" required>
+                            </div>
+                            <div class="field email">
+                                <input type="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="field message">
+                            <textarea rows="10" name="message" placeholder="Message" required></textarea>
+                        </div>
+                        <div class="send">
+                            <button type="submit">Send Message</button>
+                        </div>
+                        <h2 class="status hide">
+                            Thank You! I will contact you shortly
+                        </h2>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span class="creator">Mohamed Yaser</span> 
+        <span class="divider">|</span>
+        <span class="made">Made with <i class="fa fa-heart"></i> in India </span>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
