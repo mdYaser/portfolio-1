@@ -49,7 +49,7 @@ function scrollToTop() {
 }
 
 const typed = new Typed('.typing', {
-  strings: ['Web Developer'],
+  strings: ['Web Developer', 'Engineer', 'UI enthusiast', 'React Developer'],
   typeSpeed: 100,
   backSpeed: 60,
   loop: true,
