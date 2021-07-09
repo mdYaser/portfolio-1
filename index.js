@@ -66,6 +66,46 @@ function contactMe(e) {
   e.target.reset();
 }
 
+gsap.registerPlugin(ScrollTrigger);
+let t1 = gsap.timeline();
+t1.from('.home', {
+  duration: 1.5,
+  y: '-30%',
+  opacity: 0,
+  ease: 'power4.easeOut',
+});
+t1.from(
+  '.text-content',
+  {
+    duration: 1.5,
+    y: '-50%',
+    opacity: 0,
+    ease: 'power4.easeOut',
+    stagger: 0.3,
+  },
+  '-=0.2'
+);
+gsap.from('.avatar', {
+  scrollTrigger: {
+    trigger: '.avatar',
+    start: 'top bottom',
+  },
+  duration: 1,
+  x: -50,
+  opacity: 0,
+  stagger: 0.3,
+});
+gsap.from('.edu-card', {
+  scrollTrigger: {
+    trigger: '.edu-card',
+    start: 'top bottom',
+  },
+  duration: 1,
+  y: 50,
+  opacity: 0.5,
+  stagger: 0.3,
+});
+
 window.addEventListener('scroll', debounce(scrolling));
 menuItemsChild.forEach(ele =>
   ele.addEventListener('click', () => {
